@@ -1,0 +1,55 @@
+/* MOBILE FIRST */
+
+body{
+    font-family: Arial;
+    background-color: #f2f2f2;
+
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input{
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+
+/* DESKTOP */
+@media (min-width: 768px){
+
+    .formulario{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .grande{
+        width: 48%;
+    }
+
+    .campo{
+        width: 30%;
+    }
+
+}
