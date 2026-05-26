@@ -1,0 +1,53 @@
+/* MOBILE FIRST */
+
+body{
+    font-family: Arial;
+    background-color: #f0f0f0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    align-items: center;
+}
+
+.card{
+    background-color: #1e5bb8;
+    width: 300px;
+
+    border-radius: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.texto{
+    padding: 10px;
+}
+
+
+/* DESKTOP */
+@media (min-width: 768px){
+
+    .card{
+        width: 600px;
+
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .card img{
+        width: 250px;
+    }
+
+}
